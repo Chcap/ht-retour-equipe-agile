@@ -1,0 +1,335 @@
+/**
+ * Stormshield theme for reveal.js.
+ *
+ * Copyright (C) 2015 Stormshield
+ */
+
+@font-face {
+    font-family: "conduititcstd";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/conduititcstd-regular.eot") format("embedded-opentype"), url("../fonts/conduititcstd-regular.woff") format("woff"), url("../fonts/conduititcstd-regular.ttf") format("truetype"), url("../fonts/conduititcstd-regular.svg#conduititcstdregular") format("svg");
+}
+@font-face {
+    font-family: "conduititcstd";
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/conduititcstd-bolditalic.eot") format("embedded-opentype"), url("../fonts/conduititcstd-bolditalic.woff") format("woff"), url("../fonts/conduititcstd-bolditalic.ttf") format("truetype"), url("../fonts/conduititcstd-bolditalic.svg#conduititcstdbolditalic") format("svg");
+}
+@font-face {
+    font-family: "conduititcstd";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/conduititcstd-bold.eot") format("embedded-opentype"), url("../fonts/conduititcstd-bold.woff") format("woff"), url("../fonts/conduititcstd-bold.ttf") format("truetype"), url("../fonts/conduititcstd-bold.svg#conduititcstd_lightbold") format("svg");
+}
+@font-face {
+    font-family: "conduititcstd";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/conduititcstd-extrabold.eot") format("embedded-opentype"), url("../fonts/conduititcstd-extrabold.woff") format("woff"), url("../fonts/conduititcstd-extrabold.ttf") format("truetype"), url("../fonts/conduititcstd-extrabold.svg#conduititcstdextrabold") format("svg");
+}
+@font-face {
+    font-family: "conduititcstd";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/conduititcstd-italic.eot") format("embedded-opentype"), url("../fonts/conduititcstd-italic.woff") format("woff"), url("../fonts/conduititcstd-italic.ttf") format("truetype"), url("../fonts/conduititcstd-italic.svg#conduititcstditalic") format("svg");
+}
+@font-face {
+    font-family: "conduititcstd";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/conduititcstd-light.eot") format("embedded-opentype"), url("../fonts/conduititcstd-light.woff") format("woff"), url("../fonts/conduititcstd-light.ttf") format("truetype"), url("../fonts/conduititcstd-light.svg#conduititcstdlight") format("svg");
+}
+@font-face {
+    font-family: "conduititcstd";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/conduititcstd-medium.eot") format("embedded-opentype"), url("../fonts/conduititcstd-medium.woff") format("woff"), url("../fonts/conduititcstd-medium.ttf") format("truetype"), url("../fonts/conduititcstd-medium.svg#conduititcstdmedium") format("svg");
+}
+@font-face {
+    font-family: "conduititcstd";
+    font-style: normal;
+    font-weight: 200;
+    src: url("../fonts/conduititcstd-extralight.eot") format("embedded-opentype"), url("../fonts/conduititcstd-extralight.woff") format("woff"), url("../fonts/conduititcstd-extralight.ttf") format("truetype"), url("../fonts/conduititcstd-extralight.svg#conduititcstdextralight") format("svg");
+}
+
+.reveal a:not(.image) {
+	line-height: 1.3em;
+}
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+html, body {
+	font-size: 100%;
+}
+
+body {
+	background: transparent url('../images/vague-top.png') top center no-repeat;
+}
+
+.reveal {
+	font-family: "conduititcstd", sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	letter-spacing: -0.02em;
+	color: #575756;
+}
+
+::selection {
+	color: white;
+	background: none repeat scroll 0 0 #009edf;
+	text-shadow: none;
+}
+
+.reveal .slides > section, .reveal .slides > section > section {
+	line-height: 1.3;
+	font-weight: inherit;
+}
+
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+	margin: 0 0 20px 0;
+	color: #1b9be3;
+	font-family: "conduititcstd", sans-serif;
+	font-weight: 600;
+	line-height: 0.9em;
+	text-transform: uppercase;
+	text-shadow: none;
+	word-wrap: break-word;
+}
+
+.reveal h1 {
+	margin-bottom: 0.3em;
+	text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+	background: transparent url('../images/shadow-slider-bottom.png') bottom center no-repeat;
+}
+
+.reveal h1 {
+	font-size: 3.77em;
+}
+
+.reveal h2 {
+	font-size: 2.11em;
+}
+
+.reveal h3 {
+	font-size: 1.55em;
+}
+
+.reveal h4 {
+	font-size: 1em;
+}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a:not(.image) {
+	color: #3b759e;
+	text-decoration: none;
+	-webkit-transition: color .15s ease;
+	-moz-transition: color .15s ease;
+	-ms-transition: color .15s ease;
+	-o-transition: color .15s ease;
+	transition: color .15s ease;
+}
+
+.reveal a:not(.image):hover {
+	color: #74a7cb;
+	text-shadow: none;
+	border: none;
+}
+
+.reveal .roll span:after {
+	color: #fff;
+	background: #264c66;
+}
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+	margin: 15px 0px;
+	background: rgba(255, 255, 255, 0.12);
+	/*border: 4px solid #333333;*/
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-ms-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+}
+
+.reveal a:hover img {
+	background: rgba(255, 255, 255, 0.2);
+	border-color: #3b759e;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+	border-right-color: #0286b5;
+}
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+	border-left-color: #0286b5;
+}
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+	border-bottom-color: #0286b5;
+}
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+	border-top-color: #0286b5;
+}
+
+.reveal .controls div.navigate-left.enabled:hover {
+	border-right-color: #01aae6;
+}
+
+.reveal .controls div.navigate-right.enabled:hover {
+	border-left-color: #01aae6;
+}
+
+.reveal .controls div.navigate-up.enabled:hover {
+	border-bottom-color: #01aae6;
+}
+
+.reveal .controls div.navigate-down.enabled:hover {
+	border-top-color: #01aae6;
+}
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.reveal .progress span {
+	background: linear-gradient(to bottom, #01aae6 0px, #0286b5 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	-webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+	-moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+	-ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+	-o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+	transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+
+/*********************************************
+ * SLIDE NUMBER
+ *********************************************/
+.reveal .slide-number {
+	color: #0286b5;
+}
+
+.reveal section img.noborder {
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+
+.reveal section .time:before {
+	content: "⌛";
+	color: #575756;
+}
+
+.reveal section .time {
+	margin-top: 1em;
+}
+
+.reveal section .time.low:after {
+	color: green;
+	content: "Faible";
+}
+
+.reveal section .time.medium:after {
+	color: orange;
+	content: "Moyen";
+}
+
+.reveal section .time.high:after {
+	color: red;
+	content: "Fort";
+}
+
+.reveal .shadow {
+	text-shadow: 1px 1px 1px white;
+}
+
+.reveal section table {
+	width: 960px;
+	margin: auto
+}
+
+.center-content td {
+	vertical-align: middle;
+	text-align: center;
+}
+.center-content-left td {
+	vertical-align: middle;
+	text-align: left !important;
+}
+
+.reveal ul, .reveal ol {
+	display: table;
+	margin: auto;
+	vertical-align: middle;
+}
+
+.reveal ul li, .reveal ol li {
+	text-align: left;
+}
+
+.reveal .row {
+	display: table;
+	width: 100%;
+}
+
+.reveal .columns {
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+/*********************************************
+ * Grid with table
+/********************************************/
+.column-1 {
+	width: 16.66667%;
+}
+
+.column-2 {
+	width: 33.33333%;
+}
+
+.column-3 {
+	width: 50%;
+}
+
+.column-4 {
+	width: 66.66667%;
+}
+
+.column-5 {
+	width: 83.33333%;
+}
+
+.column-6 {
+	width: 100%;
+}
+
+/*********************************************
+ * bold
+/********************************************/
+strong, b, table th {
+	font-weight: bold !important;
+}

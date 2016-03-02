@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Pratiques sur Synapse</title>
+
+		<meta name="description" content="">
+		<meta name="author" content="Stormshield">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/stormshield.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<section>
+					<h2>Retour d'experience d'une équipe Agile</h2>
+				</section>
+			</section>
+
+			<section>
+				<h2>Agenda</h2>
+				<ul>
+					<li>Contexte</li>
+					<li>Disclaimer</li>
+					<li>Problèmes rencontrés (et solutions apportées)</li>
+					<li>Conclusion</li>
+					<li>Questions / Échanges</li>
+				</ul>
+			</section>
+			<section>
+				<section>
+					<h2>Contexte</h2>
+				</section>
+				<section>
+					<h2>L'entreprise</h2>
+					<ul>
+						<li>Editeur logiciel</li>
+						<li>Sécurité informatique (Réseau)</li>
+					</ul>
+				</section>
+				<section>
+					<h2>L'agilité</h2>
+					<ul>
+						<li>R&D en mode agile (Scrum) depuis + de 5 ans</li>
+						<li>Rodé sur les différentes cérémonies (Lancement de sprint, Standup, Démo, Rétro)</li>
+						<li>Souci de la qualité: Revue de code, Tests auto, Intégration continue</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Le projet</h2>
+					<ul>
+						<li>Projet stratégique reprenant de zéro l'existant</li>
+						<li>Interaction de 4 briques avec différents rôles/techno/language</li>
+						<li>Equipe de 12/15/19 personnes</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Disclaimer</h2>
+					<ul>
+						<li>Nos solutions à nos problèmes</li>
+						<li>Résultats discutables et perfectibles</li>
+						<li>Permettre le partage et l'échange</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Problèmes rencontrés et solutions apportées</h2>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2 class="problem">Problème: Le rôle du PO</h2>
+
+					<table>
+						<tr>
+							<td>
+								PO absent ou non disponible<br><img src="images/boss_absent.jpg"/>
+							</td>
+							<td>
+								PO ne connaissant pas les besoins client<br><img src="images/girl_scratching_head_web.jpg"/>
+							</td>
+							<td>
+								D'autres personnes (managers, marketing, commerciaux, etc...) fixent les priorités<br><img src="images/avis.jpg"/>
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<h2 class="solution">Solution: Le PO à 2 têtes</h2>
+					<img src="images/two_heads.jpg"/>
+					<ul>
+						<li>Le Product Leader: tourné vers l'équipe et présent au quotidien</li>
+						<li>Le Product Manager: tourné vers l'exterieur et proche des besoins utilisateur</li>
+						<li>Eux seul sont décisionnaires sur le backlog et sa priorisation</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2 class="problem">Problème: Equipe trop grosse</h2>
+					<img src="images/large_group.jpg"/>
+					<ul>
+						<li>Passage de 8 à 12 personnes, puis à 15 personnes</li>
+						<li>Toutes les cérémonies sont lourdes (Lancement sprint, Stand up, Rétro)</li>
+						<li>Difficulté à suivre/partager l'information</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="solution">Solution: Scinder en plusieurs équipes</h2>
+					<img src="images/small_groups.jpg"/>
+					<ul>
+						<li>Couper par thème fonctionnel ou technique</li>
+						<li>Composer les équipes en fonction du thème</li>
+                        <li>Moins de dépendance/gêne entre les équipes</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2 class="problem">Problème: Gestion d'un nouvel arrivant</h2>
+					<img src="images/welcome.jpg" />
+					<ul>
+						<li>Temps d'adaptation (humain, technique)</li>
+						<li>Quand sera-t-il/elle efficace ?</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="solution">Solution: Projet d'intégration</h2>
+					<img src="images/integration.jpg" />
+					<ul>
+						<li>Un projet portant sur un sujet périphérique (outil, framework, étude)</li>
+						<li>Incite à découvrir l'équipe et l'environnement de travail</li>
+						<li>Incite à rencontrer d'autres personnes de l'entreprise</li>
+						<li>Permet au nouvel arrivant de montrer un travail réalisé</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2 class="problem">Problème: Montée en compétences / Partage de connaissances</h2>
+					<img src="images/partage.jpg" />
+					<ul>
+						<li>Manque de temps</li>
+						<li>Trop peu de gens connaissent un domaine / techno / composant</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="solution">Solution: Pair-Programming & Pair-Testing</h2>
+					<img src="images/pair-programming.jpg" />
+					<ul>
+						<li>Permet de découvrir et partager de l'information par l'exemple</li>
+						<li>L'échange améliore la qualité du travail fourni</li>
+						<li>Gros retour sur investissement</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2 class="problem">Problème: Goulet d'étranglement sur la validation</h2>
+					<img src="images/embouteillage.jpg" />
+					<ul>
+						<li>2 QA pour 9 dev</li>
+						<li>Validation d'US "finie" qui traine</li>
+						<li>Pression sur les QA en fin de sprint</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="solution">Solution 1: Tests exploratoires</h2>
+					<img src="images/test-explo.jpg" />
+					<ul>
+						<li>Se font avant une soumission de revue de code</li>
+						<li>Le QA teste le développement sur le poste du développeur</li>
+						<li>Prise en compte rapide des remarques (voir à la volée)</li>
+						<li>5 à 20 min</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="solution">Solution 2: Bug Story</h2>
+					<img src="images/moutons.jpg" />
+					<ul>
+						<li>Regrouper plusieurs bugs en 1 seule US et un seul build</li>
+						<li>Mise en commun du temps de mis en place de l'environnement de validation</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2 class="problem">Problème: Développement mal ciblé</h2>
+					<img src="images/cible-ratee.jpg" />
+					<ul>
+						<li>Inutilisé ou incompris par les utilisateurs</li>
+						<li>Travail couteux avec un faible retour sur investissement</li>
+						<li>Implémentation trop compliquée par rapport au besoin</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="solution">Solution: Développement minimaliste incrémental</h2>
+					<img src="images/agile-incremental.jpg" />
+					<ul>
+						<li>Découper en plusieurs US d'amélioration successive</li>
+						<li>Première(s) itération(s) simpl(ist)es</li>
+						<li>Retours rapides à plusieurs niveaux: dev, QA, PO & stakeholders, utilisateurs (Test UX)</li>
+						<li>Plus facile de jeter une fausse piste que la garder à tout prix (dette technique)</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Conclusion</h2>
+					<ul>
+						<li>Amélioration continue grâce à la rétrospective</li>
+						<li>Feedback rapide via des cycles courts</li>
+						<li>Faire confiance aux équipes => Autonomie et motivation</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<h2>Questions / Échanges</h2>
+				<img src="" alt="" />
+			</section>
+			<section>
+				<h2>Et aussi...</h2>
+			</section>
+			<section>
+				<section>
+					<h2 class="problem">Problème: Appréhender un sujet flou/large/complexe</h2>
+					<img src="images/mannequin_too_many_questions.jpg"/>
+					<ul>
+						<li>Difficulté pour le cadrer (où commencer ? où s'arrêter ?)</li>
+						<li>Définition du Quoi (quelles sont les attentes ?)</li>
+						<li>Difficile de prévoir ou donner de la visibilité dessus</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="solution">Solution: Equipe POC/Exploration</h2>
+					<img src="images/boussole-sur-carte-ancienne.jpg" />
+					<ul>
+						<li>Monter une petite équipe dédiée au sujet</li>
+						<li>Réalise les études nécessaires</li>
+						<li>Réalise des POCs</li>
+						<li>Echange avec le PO mais aussi d'autres interlocuteurs</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2 class="problem">Problème: Revue de code qui traîne</h2>
+					<img src="images/turtle.jpg" />
+					<ul>
+						<li>Revue de code ouverte depuis plusieurs jours</li>
+						<li>Nombreux aller-retour entre le soumetteur et les reviewers</li>
+						<li>Revue de code chargée et potentiellement illisible</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="solution">Solution 1: Pair-Review</h2>
+					<img src="images/pair-review.jpg" />
+					<ul>
+						<li>permet de dégrossir le travail de revue</li>
+						<li>prise en compte rapide et argumentée des remarques</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="solution">Solution 2: Limite du nombre de revues ouvertes</h2>
+					<img src="images/goulot.png" />
+					<ul>
+						<li>Hérité du Kanban</li>
+						<li>Incite à effectuer les revues</li>
+						<li>Incite à aider les soumetteurs de revue qui bloquent</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2 class="problem">Problème: Confusion entre les SP et les JH</h2>
+					<img src="images/chiffres.gif"/>
+					<ul>
+						<li>Estimation des SP et des JH lors du Sprint Planning</li>
+						<li>Peu d'interêt perçu des SP par rapport aux JH</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="solution">Solution: Ne pas estimer les deux au même moment</h2>
+					<table>
+						<tr>
+							<td>
+								<b>Poker planning (hebdomadaire)</b>: donne une idée au PO du coût d'une US et l'aide à prioriser son backlog<br><img src="images/planningpoker.jpg"/>
+							</td>
+							<td>
+								Découpage (et estimation) des tâches <b>en début de sprint</b><br><br><img width="100%" src="images/Sprint-Planning-Meeting-outcome.jpg"/>
+							</td>
+						</tr>
+					</table>
+				</section>
+			</section>
+		</div>
+	</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				slideNumber: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() {
+						hljs.tabReplace = '    ';
+						hljs.initHighlightingOnLoad();
+				} },
+				{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+				{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+	</body>
+</html>

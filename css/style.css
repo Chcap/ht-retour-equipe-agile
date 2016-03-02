@@ -1,0 +1,35 @@
+
+.reveal section img.inline {
+	border: 0;
+	background: transparent;
+	box-shadow: none;
+	margin: 0;
+	position: relative;
+}
+
+.reveal table {
+	border-collapse: collapse;
+}
+
+.reveal table.odd tbody tr:nth-child(odd) {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.reveal table th, .reveal table td, .reveal table tr {
+	border: 0;
+	padding: 10px 20px 10px 20px;
+}
+
+.reveal .slide-number {
+	font-size: 40px;
+	left: 15px;
+	opacity: 1;
+}
+
+h2.problem {
+	color: red;
+}
+
+h2.solution {
+	color: green;
+}
